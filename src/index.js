@@ -13,5 +13,7 @@ if (document.readyState !== "loading") {
 function initializeCode() {
   const myButton = document.getElementById("my-button");
 
-  myButton.addEventListener("click", console.log("Hello World!"));
+  myButton.addEventListener("click", function () {
+    console.log("Hello World!");
+  });
 }

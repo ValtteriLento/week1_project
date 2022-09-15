@@ -206,7 +206,9 @@ if (document.readyState !== "loading") {
 
 function initializeCode() {
   var myButton = document.getElementById("my-button");
-  myButton.addEventListener("click", console.log("Hello World!"));
+  myButton.addEventListener("click", function () {
+    console.log("Hello World!");
+  });
 }
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -236,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38465" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40023" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
