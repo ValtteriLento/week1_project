@@ -206,8 +206,17 @@ if (document.readyState !== "loading") {
 
 function initializeCode() {
   var myButton = document.getElementById("my-button");
+  var addDataButton = document.getElementById("add-data");
   myButton.addEventListener("click", function () {
     console.log("hello world");
+    var newTitle = document.getElementById("title");
+    newTitle.innerHTML = "My notebook";
+  });
+  addDataButton.addEventListener("click", function () {
+    var texts = document.getElementById("texts");
+    var newListItem = document.createElement("li");
+    newListItem.innerHTML = document.getElementById("text").value;
+    texts.appendChild(newListItem);
   });
 }
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
