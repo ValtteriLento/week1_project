@@ -14,6 +14,6 @@ function initializeCode() {
   const myButton = document.getElementById("my-button");
 
   myButton.addEventListener("click", function () {
-    console.log("Hello World!");
+    console.log("hello world");
   });
 }
